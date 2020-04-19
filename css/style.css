@@ -1,0 +1,33 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Dosis-Bold"; src: url("../fonts/Dosis-Bold.otf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+body { background: url("../images/banner.jpg") no-repeat top/cover; height: 100vh; margin: 0; padding: 0; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- SVG Text Stroke Animation Section Starts -------*/
+
+svg { height: 500px; left: 50%; position: absolute; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); width: 100%; }
+svg text { animation: strokeAnimate 1s linear infinite; -webkit-animation: strokeAnimate 1s linear infinite; -moz-animation: strokeAnimate 1s linear infinite; -ms-animation: strokeAnimate 1s linear infinite; -o-animation: strokeAnimate 1s linear infinite; fill: rgba(0,0,0,0.1); font: 12rem/1.4 "Dosis-Bold"; stroke: #fff; stroke-dasharray: 40; stroke-linejoin: round; stroke-width: 1px; }
+@keyframes strokeAnimate {
+	100% { stroke-dashoffset: 160; }
+}
+@-webkit-keyframes strokeAnimate {
+	100% { stroke-dashoffset: 160; }
+}
+@-moz-keyframes strokeAnimate {
+	100% { stroke-dashoffset: 160; }
+}
+@-ms-keyframes strokeAnimate {
+	100% { stroke-dashoffset: 160; }
+}
+@-o-keyframes strokeAnimate {
+	100% { stroke-dashoffset: 160; }
+}
+
+/*------- SVG Text Stroke Animation Section Ends -------*/
